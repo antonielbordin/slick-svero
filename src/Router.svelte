@@ -20,7 +20,7 @@
   // this is where we set the active component
   const last = route => {
     return function(ctx) {
-      $currentRoute = { ...route, routeParams: ctx.params };
+      $currentRoute = { ...route, params: ctx.params };
     };
   };
 
