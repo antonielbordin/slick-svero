@@ -1,0 +1,38 @@
+{
+  "name": "slick-svero",
+  "version": "1.0.0",
+  "description": "Slick Svero is page.js based router for svelte",
+  "main": "dist/slick-svero.js",
+  "module": "dist/slick-svero.mjs",
+  "svelte": "./index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "page": "^1.11.5"
+  },
+  "devDependencies": {
+    "rollup": "^1.28.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-svelte": "^5.1.1",
+    "svelte": "^3.16.7"
+  },
+  "author": "Antoniel Bordin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonielbordin/slick-svero"
+  },
+  "homepage": "https://github.com/antonielbordin/slick-svero/blob/master/README.md",
+  "bugs": {
+    "url": "https://github.com/antonielbordin/slick-svero/issues"
+  },
+  "keywords": [
+    "svelte",
+    "svelte router",
+    "slick svero",
+    "simple router"
+  ]
+}
