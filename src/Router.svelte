@@ -13,7 +13,7 @@
 
 <script>
   import page from "page";
-  import { onMount, onDestroy } from "svelte";
+  import { onMount, beforeUpdate, onDestroy } from "svelte";
 
   export let disabled = false;
   export let basePath = undefined;
@@ -37,11 +37,20 @@
     page.start();
   };
 
+  function checkRefresh() {
+    console.log('capturar o refresh!');
+    console.log('isReloaded: ' , $isReloaded);
+    console.log('currentRoute: ', $currentRoute);
+  }  
+
   // build the router when component is mounted
   onMount(buildPage);
+
+  beforeUpdate(checkRefresh);
   
   // remove click event handlers when component is unmounted
   onDestroy(page.stop);
+  
 </script>
 
 <!-- don't render anything if component is disabled -->
