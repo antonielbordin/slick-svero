@@ -4,6 +4,7 @@
   const routes = {};
 
   export const currentRoute = writable({});
+  export const isReloaded = writable(false);
 
   export const registerRoute = route => {
     routes[route.path] = route;
