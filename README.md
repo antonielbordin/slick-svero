@@ -57,7 +57,7 @@ _For more usage examples, see the [Wiki][wiki] or access the examples folder._
 # API
 
 ## Router
-This component provides context-based routing for the Link and Route component and should be used to encapsulate these components. No parameters.
+This component provides context-based routing for the `Link` and `Route` component and should be used to encapsulate these components. No parameters.
 
 
 ## Route
@@ -99,7 +99,7 @@ Distributed under the MIT license. See ``LICENSE`` for more information.
 5. Create a new Pull Request
 
 <!-- Markdown link & img dfn's -->
-[npm]: https://img.shields.io/npm/v/svelte-routing.svg
+[npm]: https://img.shields.io/npm/v/slick-svero.svg
 [npm-url]: https://npmjs.com/package/slick-svero
 [wiki]: https://github.com/antonielbordin/slick-svero/wiki
 
