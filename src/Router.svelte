@@ -4,7 +4,6 @@
   const routes = {};
 
   export const currentRoute = writable({});
-  export const isReloaded = writable(false);
 
   export const registerRoute = route => {
     routes[route.path] = route;
@@ -13,7 +12,7 @@
 
 <script>
   import page from "page";
-  import { onMount, beforeUpdate, onDestroy } from "svelte";
+  import { onMount, onDestroy } from "svelte";
 
   export let disabled = false;
   export let basePath = undefined;
@@ -37,16 +36,8 @@
     page.start();
   };
 
-  function checkRefresh() {
-    console.log('capturar o refresh!');
-    console.log('isReloaded: ' , $isReloaded);
-    console.log('currentRoute: ', $currentRoute);
-  }  
-
   // build the router when component is mounted
   onMount(buildPage);
-
-  beforeUpdate(checkRefresh);
   
   // remove click event handlers when component is unmounted
   onDestroy(page.stop);
