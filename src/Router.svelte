@@ -43,7 +43,7 @@
   onDestroy(page.stop);
   
 </script>
-
+<svelte:options tag="svero-router" />
 <!-- don't render anything if component is disabled -->
 {#if !disabled}
   <slot />
