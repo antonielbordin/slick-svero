@@ -1,6 +1,6 @@
 {
   "name": "slick-svero",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Slick Svero is page.js based router for svelte",
   "main": "dist/slick-svero.js",
   "module": "dist/slick-svero.mjs",
@@ -25,7 +25,7 @@
     "type": "git",
     "url": "https://github.com/antonielbordin/slick-svero"
   },
-  "homepage": "https://github.com/antonielbordin/slick-svero/blob/master/README.md",
+  "homepage": "https://github.com/antonielbordin/slick-svero/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/antonielbordin/slick-svero/issues"
   },
