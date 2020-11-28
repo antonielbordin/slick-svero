@@ -1,3 +1,4 @@
+<svelte:options tag="svero-route" />
 <script>
   import { registerRoute, currentRoute } from "./Router.svelte";
 
@@ -13,7 +14,6 @@
     routeParams = $currentRoute.params;
   }
 </script>
-<svelte:options tag="svero-route" />
 <!-- if this is current active route -->
 {#if $currentRoute.path === path}
   <!-- prefer component over slot -->
