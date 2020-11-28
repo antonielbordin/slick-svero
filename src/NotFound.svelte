@@ -1,4 +1,3 @@
-<svelte:options tag="svero-notfound" />
 <script>
   import { registerRoute, currentRoute } from "./Router.svelte";
 
